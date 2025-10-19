@@ -35,7 +35,7 @@ export default function Login() {
 
 
   const handleGoogleLogin = () => {
-    window.location.href = "https://homifi-backend.onrender.com/auth/google";
+    window.location.href = "https://storynest-backend-i8jk.onrender.com/auth/google";
   };
 
   return (
