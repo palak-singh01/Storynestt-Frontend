@@ -1,0 +1,96 @@
+html, body {
+  height: 100% ;       
+  min-height: 100vh !important;  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5); 
+  background-repeat: no-repeat; 
+   background-size: 1000% 1000% !important;
+   background-attachment: fixed !important;
+  animation: gradientBG 20s ease infinite;
+  position: relative;
+  height: auto !important;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  background: rgba(255,255,255,0.3);
+  animation: float 15s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  50% { transform: translateY(-50px) translateX(30px) rotate(180deg); }
+  100% { transform: translateY(0px) translateX(0px) rotate(360deg); }
+}
+
+
+.shape1 { width: 100px; height: 100px; top: 10%; left: 20%; animation-duration: 18s; }
+.shape2 { width: 60px; height: 60px; top: 40%; left: 70%; animation-duration: 22s; }
+.shape3 { width: 80px; height: 80px; top: 70%; left: 30%; animation-duration: 20s; }
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 900px !important;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blog-card {
+    margin-top: 30px;
+    width: 48%;
+    display: inline-block;
+  }
+
+  .comment-section {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiAppBar-root {
+    padding: 5px !important;
+  }
+
+  .MuiToolbar-root {
+    flex-wrap: wrap !important;   
+    justify-content: center !important;
+    gap: 6px !important;         
+  }
+
+  .MuiButton-root {
+    font-size: 12px !important;
+    padding: 4px 8px !important;
+  }
+
+  .MuiInputBase-root {
+    width: 90% !important;       
+    margin: 5px auto !important;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 20px !important;  
+  }
+}
