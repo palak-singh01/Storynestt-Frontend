@@ -6,7 +6,7 @@ import Login from "./components/login.jsx";
 import Show from "./components/show.jsx";
 import NewBlog from "./components/newBlog.jsx";
 import EditPage from './components/editPage.jsx';
-import React, { AuthProvider } from "./components/AuthContext";
+import React, { AuthProvider } from "./components/AuthContent";
 import Dashboard from "./components/Dashboard";
 
 
