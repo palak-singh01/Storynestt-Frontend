@@ -11,7 +11,7 @@ export default function AuthProvider({ children }) {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await fetch("https://homifi-backend.onrender.com/checkAuth", {
+        const res = await fetch("https://storynest-backend-i8jk.onrender.com/checkAuth", {
           method: "GET",
           credentials: "include",
         });
