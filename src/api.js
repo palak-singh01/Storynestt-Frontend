@@ -1,6 +1,6 @@
 import axios from "axios";
 const api = axios.create({
-  baseURL: "https://homifi-backend.onrender.com", 
+  baseURL: "https://storynest-backend-i8jk.onrender.com", 
   withCredentials: true,
    headers: { "Content-Type": "application/json" },
 });
