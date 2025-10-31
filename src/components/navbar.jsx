@@ -128,7 +128,7 @@ const handleCategorySelect = (category) => {
             textAlign: { xs: "center", md: "left" },      
           }}
         >
-          HomiFi
+          StoryNest
         </Typography>
 
         
